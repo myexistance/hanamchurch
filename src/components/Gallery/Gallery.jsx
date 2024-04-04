@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import data from "../../constants/data";
 import images from "../../constants/images";
-import "./Work.css";
+import "./Gallery.css";
 import {FaTimesCircle} from "react-icons/fa";
 
 const Work = () => {

@@ -24,13 +24,13 @@ const Navbar = () => {
                             <a href = "#home" className = "nav__link text__upper fw__6 text__light nav__active">home</a>
                         </li>
                         <li className="nav__item">
-                            <a href = "#work" className = "nav__link text__upper fw_6 text__light">Intro</a>
+                            <a href = "#about" className = "nav__link text__upper fw_6 text__light">About</a>
                         </li>
                         <li className="nav__item">
-                            <a href = "#work" className = "nav__link text__upper fw_6 text__light">work</a>
+                            <a href = "#gallery" className = "nav__link text__upper fw_6 text__light">Gallery</a>
                         </li>
                         <li className="nav__item">
-                            <a href = "#work" className = "nav__link text__upper fw_6 text__light">Offering</a>
+                            <a href = "#offering" className = "nav__link text__upper fw_6 text__light">Offering</a>
                         </li>
                         {/* <li className="nav__item">
                             <a href = "#work" className = "nav__link text__upper fw_6 text__light">process</a>
