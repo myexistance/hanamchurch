@@ -42,7 +42,7 @@ const Navbar = () => {
                             <a href = "#work" className = "nav__link text__upper fw_6 text__light">testimonials</a>
                         </li> */}
                         <li className="nav__item">
-                            <a href = "#work" className = "nav__link text__upper fw_6 text__light">contact</a>
+                            <a href = "#Contact" className = "nav__link text__upper fw_6 text__light">contact</a>
                         </li>
                     </ul>
                 </div>
