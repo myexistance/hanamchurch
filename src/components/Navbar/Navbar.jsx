@@ -27,22 +27,23 @@ const Navbar = () => {
                             <a href = "#about" className = "nav__link text__upper fw_6 text__light">About</a>
                         </li>
                         <li className="nav__item">
+                            <a href = "#Service" className = "nav__link text__upper fw_6 text__light">Service</a>
+                        </li>
+                        <li className="nav__item">
                             <a href = "#gallery" className = "nav__link text__upper fw_6 text__light">Gallery</a>
                         </li>
                         <li className="nav__item">
-                            <a href = "#offering" className = "nav__link text__upper fw_6 text__light">Offering</a>
-                        </li>
-                        {/* <li className="nav__item">
-                            <a href = "#work" className = "nav__link text__upper fw_6 text__light">process</a>
+                            <a href = "#Map" className = "nav__link text__upper fw_6 text__light">Map</a>
                         </li>
                         <li className="nav__item">
-                            <a href = "#work" className = "nav__link text__upper fw_6 text__light">services</a>
-                        </li>
-                        <li className="nav__item">
+<<<<<<< HEAD
+                            <a href = "#work" className = "nav__link text__upper fw_6 text__light">contact</a>
+=======
                             <a href = "#work" className = "nav__link text__upper fw_6 text__light">testimonials</a>
                         </li> */}
                         <li className="nav__item">
                             <a href = "#Contact" className = "nav__link text__upper fw_6 text__light">contact</a>
+>>>>>>> 00c78c1c6dc7040ac11cbd5ef21555366b359835
                         </li>
                     </ul>
                 </div>
@@ -60,16 +61,10 @@ const Navbar = () => {
                                 <a href = "#about" className="nav__link text__upper fw__6 text__light">about</a>
                             </li>
                             <li className = "nav__item">
-                                <a href = "#about" className="nav__link text__upper fw__6 text__light">work</a>
-                            </li>
-                            <li className = "nav__item">
-                                <a href = "#about" className="nav__link text__upper fw__6 text__light">process</a>
-                            </li>
-                            <li className = "nav__item">
                                 <a href = "#about" className="nav__link text__upper fw__6 text__light">services</a>
                             </li>
                             <li className = "nav__item">
-                                <a href = "#about" className="nav__link text__upper fw__6 text__light">testimonials</a>
+                                <a href = "#map" className="nav__link text__upper fw__6 text__light">Map</a>
                             </li>
                             <li className = "nav__item">
                                 <a href = "#about" className="nav__link text__upper fw__6 text__light">contact</a>
