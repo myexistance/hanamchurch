@@ -5,6 +5,13 @@ export const Services = () => {
     <>
       <h1>Services</h1>
       <div>
+        <br />
+        <br />
+        <br />
+        <p style={{ 
+          textAlign: "left",
+          padding: "0 80px"
+       }}>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt
         itaque, perferendis necessitatibus corrupti ea magni voluptatibus est
         ipsa. Nulla praesentium dolore eos alias incidunt, odio et eaque, sunt
@@ -17,9 +24,14 @@ export const Services = () => {
         possimus voluptate ipsam alias velit veritatis reprehenderit
         repudiandae. Ullam praesentium inventore minima eius dolorem omnis fugit
         facilis.
+        </p>
       </div>
       <br />
       <div>
+        <p style={{ 
+          textAlign: "left",
+          padding: "0 80px"
+       }}></p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
         libero laboriosam quia totam, ducimus dolorum velit voluptates ipsam ad
         labore repellendus! Reprehenderit corporis labore totam est quas natus

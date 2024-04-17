@@ -4,6 +4,9 @@ export const About = () => {
   return (
     <div className="about">
       <div className="about__content">
+        <br />
+        <br />
+        <br />
         <img
           src="https://mail.google.com/mail/u/0?ui=2&ik=9f158c6b36&attid=0.4&permmsgid=msg-f:1795275346729968251&th=18ea196a83db227b&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ_c6bEQrraUiE2NrNt8A-HQ-gKe0ivsTM2RuGLfCCq8vrBEH1VH5akpaKSDwoO-zsWvGLdWhI7UZfwAXrqw1lBx0-nC_HjReADH5edm1RDO1BiQ5fWEU5ezj6Y&disp=emb&realattid=ii_luj4g9493"
           alt="Description"
