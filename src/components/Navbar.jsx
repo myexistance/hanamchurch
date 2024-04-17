@@ -20,6 +20,9 @@ export const Navbar = () => {
       </div>
       <ul className={menuOpen ? "open" : ""}>
         <li>
+          <NavLink to="/">Home</NavLink>
+        </li>
+        <li>
           <NavLink to="/about">About</NavLink>
         </li>
         <li>
