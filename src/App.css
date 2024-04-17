@@ -3,3 +3,12 @@
   height: 100vh;
   width: 100%;
 }
+
+@media only screen and (min-width: 600px) {
+  .contact-wrapper {
+    flex-direction: row;
+  }
+  .contact-wrapper > div {
+    flex: 1;
+  }
+}
