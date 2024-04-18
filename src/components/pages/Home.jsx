@@ -13,8 +13,10 @@ export const Home = () => {
         }}
       >
         <div style={{ flex: 0.5, padding: '30px'}}></div>
-        <div style={{ flex: 0.5, padding: '55px'}}>
-          <p style={{ color: 'white', fontSize: '18px' }}>
+        <div style={{ flex: 0.5, margin: '25px',padding: '35px', background: '#ff000033'}}>
+          <p style={{ 
+            color: 'white', 
+            fontSize: '18px' }}>
             <span style={{ fontFamily: 'arial, sans-serif', fontSize: '21px', fontWeight: 'bold' }}>웰링턴하남교회</span>
             는 대한예수교 장로회 합동 교단(사랑의 교회, 수영로교회 등)에 소속된 교회로 하남교회에서 뉴질랜드 웰링턴에 교회를 설립하여 복음전도 사역의 일환으로 세워졌습니다.
           </p>

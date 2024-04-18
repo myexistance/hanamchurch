@@ -11,15 +11,16 @@ export const Services = () => {
       }}>
         <p style={{ 
           textAlign: "left",
-          padding: "0 80px"
+          padding: "0 60px"
         }}>
           {/* Some content */}
         </p>
       </div>
       <div>
+      <br />
         <h2 style={{ 
           textAlign: "center",
-          padding: "0 80px"
+          padding: "0 60px"
         }}>주일 예배시간</h2>
       </div>
       <div style={{ textAlign: "center", padding: "0 50px" }}>
@@ -28,11 +29,13 @@ export const Services = () => {
         주일학교: 오후 12:40 본당
       </div>
       <div>
+      <br />
         <h2 style={{ textAlign: "center" }}>주일예배 YouTube</h2>
         <div style={{ 
           width: '100%',
           height: '100%',
-          padding: '0 20px', // Adjust padding as needed
+          
+          // padding: '0 30px', // Adjust padding as needed
           display: 'flex',
           justifyContent: 'center', 
           alignItems: 'center'
