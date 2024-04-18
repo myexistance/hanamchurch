@@ -14,6 +14,7 @@ export const About = () => {
             width: "260px",
             display: "block", // Ensures image is centered horizontally
             margin: "0 auto", // Centers the image horizontally
+            borderRadius: '50%',
            
           }}
         />
