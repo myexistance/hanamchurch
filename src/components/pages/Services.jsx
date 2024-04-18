@@ -5,7 +5,12 @@ export const Services = () => {
   return (
     <>
       
-      <div>
+      <div style={{ 
+    width: '100%'
+    // display: 'flex', 
+    // justifyContent: 'center', 
+    // alignItems: 'center'
+  }}>
         <br />
         <br />
         <br />
@@ -36,7 +41,7 @@ export const Services = () => {
     <br />
     <div style={{ 
     width: '100%',
-    // display: 'flex', 
+    display: 'flex', 
     justifyContent: 'center', 
     alignItems: 'center'
   }}>
