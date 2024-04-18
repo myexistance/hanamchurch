@@ -3,7 +3,16 @@ import React from 'react';
 
 const YouTubeEmbed = ({ embedId }) => (
   <div className="video-responsive">
-    <iframe width="520" height="315" src="https://www.youtube.com/embed/nnMKn-9jOhY?si=t2HzZ67ThFmDlQzu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe 
+  width="100%" 
+  height="300" 
+  src="https://www.youtube.com/embed/nnMKn-9jOhY?si=t2HzZ67ThFmDlQzu" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  referrerpolicy="strict-origin-when-cross-origin" 
+  allowfullscreen
+></iframe>
   </div>
 );
 
