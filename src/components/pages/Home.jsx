@@ -13,7 +13,7 @@ export const Home = () => {
         }}
       >
         <div style={{ flex: 0.5, padding: '30px'}}></div>
-        <div style={{ flex: 0.5, margin: '25px',padding: '35px', background: '#ff000033'}}>
+        <div style={{ flex: 0.5, margin: '25px',padding: '35px', background: '#00003333'}}>
           <p style={{ 
             color: 'white', 
             fontSize: '18px' }}>
