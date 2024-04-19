@@ -4,8 +4,8 @@ import React from 'react';
 const YouTubeEmbed = ({ embedId }) => (
   <div className="video-responsive">
     <iframe 
-  width="365" 
-  height="300" 
+  width="420" 
+  height="295" 
   src="https://www.youtube.com/embed/nnMKn-9jOhY?si=t2HzZ67ThFmDlQzu" 
   title="YouTube video player" 
   frameborder="0" 
