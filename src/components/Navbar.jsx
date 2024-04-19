@@ -20,7 +20,7 @@ export const Navbar = () => {
       <Link to="/" className="title">
         <img src={logo} alt="Logo" className="title"/>
       </Link>
-      <div className="menu" onClick={toggleMenu}>
+      <div className={`menu ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
         <span></span>
         <span></span>
         <span></span>
