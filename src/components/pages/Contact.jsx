@@ -37,7 +37,7 @@ export const Contact = () => {
       <br />
       <div style={{ flex: 1, padding: '20px', textAlign: 'center' }}>
         {/* Paragraph goes here */}
-        <h2 style={{ textAlign: "center" }}>OFFERING: ASB Account number:</h2>
+        <h2 style={{ textAlign: "center" }}>OFFERING:</h2> <br /><p>ASB Account number:</p>
       </div>
 
       {/* Media query for responsiveness */}
