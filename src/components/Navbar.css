@@ -15,7 +15,7 @@ nav {
 }
 
 nav .title {
-    max-height: 110%; 
+    max-height: 100%; 
     width:150px;
     font-size: 1.0rem;
     margin: 0.6rem;
@@ -38,9 +38,9 @@ nav ul li {
 nav ul li a {
     display: block;
     text-decoration: none;
-    color: rgb(79, 35, 240);
-    padding: 0.5rem;
-    margin: 0 2.5rem;
+    color: rgb(66, 56, 99);
+    padding: 0.2rem;
+    margin: 0 2rem;
     border-bottom: 0.5rem;
     border-radius: 10px;
 }
@@ -53,12 +53,12 @@ nav ul li a:not(.active):hover {
 nav .menu {
     display: none;
     position: absolute;
-    top: 1.8rem;
+    top: 1.4rem;
     right: 0.8rem;
     flex-direction: column;
     justify-content: space-around;
-    width: 3.8rem;
-    height: 2.3rem;
+    width: 3.2rem;
+    height: 2.0rem;
 }
 
 /* nav .menu span {
@@ -70,15 +70,15 @@ nav .menu {
 } */
 
 nav .menu span {
-    height: 0.5rem;
-    width: 80%;
+    height: 0.2rem;
+    width: 50%;
     background-color: #fff;
-    border-radius: 0.8rem;
+    border-radius: 0.4rem;
     transition: all 0.3s ease; /* Add transition for smooth animation */
 }
 
 nav .menu.open span:nth-child(1) {
-    transform: translateY(12px) rotate(45deg); /* Rotate and move first line */
+    transform: translateY(15px) rotate(45deg); /* Rotate and move first line */
 }
 
 nav .menu.open span:nth-child(2) {
@@ -113,6 +113,7 @@ nav .menu.open span:nth-child(3) {
     nav ul li {
         width: 100%;
         text-align: center;
+        font-size: 15px;
     }
 
     nav ul li a {
