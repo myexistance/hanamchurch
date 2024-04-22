@@ -18,11 +18,16 @@
 import React from "react";
 
 export const Contact = () => {
+
+  const handleEmailClick = () => {
+    window.location.href = 'mailto: ilsun0508@gmail.com';
+  };
+
   return (
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', maxWidth: '100%', padding: '25px' }}>
       <div style={{ flex: 1 }}>
         <br />
-        <h2 style={{ textAlign: "center" }}>MAP: 88 The Parade, Island Bay, Wellington 6023</h2>
+        <h3 style={{ textAlign: "center" }}>MAP: 88 The Parade, Island Bay, Wellington 6023</h3>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4609.779165050718!2d174.77022562713333!3d-41.33224884848255!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38baad534e9011%3A0xfcb0c92cd1b4bb49!2s88%20The%20Parade%2C%20Island%20Bay%2C%20Wellington%206023!5e0!3m2!1sen!2snz!4v1713416854861!5m2!1sen!2snz"
           width="100%"
@@ -33,11 +38,29 @@ export const Contact = () => {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      <br />
+      <hr style={{ width: '100%', marginBottom: '20px' }} /> {/* Line */}
       <br />
       <div style={{ flex: 1, padding: '20px', textAlign: 'center' }}>
         {/* Paragraph goes here */}
-        <h2 style={{ textAlign: "center" }}>OFFERING:</h2> <br /><p>ASB Account number:</p>
+        <h3 style={{ textAlign: "center" }}>OFFERING:</h3> <br />
+        <p>ASB Account number:12-3254-0198348-00</p>
+      </div>
+      <br />
+      <hr style={{ width: '100%', marginBottom: '20px' }} /> {/* Line */}
+      <div style={{ flex: 1, padding: '20px', textAlign: 'center' }}>
+        <h3 style={{ textAlign: "center" }}>Drop a message to Church:</h3><br />
+        <button onClick={handleEmailClick}
+        style={{
+              padding: '15px 30px', // Adjust padding for larger button
+              fontSize: '18px', // Increase font size
+              backgroundColor: '#007bff', // Blue color
+              color: 'white', // White text color
+              border: 'none', // Remove border
+              borderRadius: '8px', // Rounded corners
+              cursor: 'pointer', // Change cursor on hover
+            }}>
+      SEND MESSAGE
+        </button>
       </div>
 
       {/* Media query for responsiveness */}
