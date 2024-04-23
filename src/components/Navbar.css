@@ -54,10 +54,10 @@ nav .menu {
     display: none;
     position: absolute;
     top: 1.8rem;
-    right: 1.8rem;
+    right: 2.5rem;
     flex-direction: column;
     justify-content: space-around;
-    width: 2.0rem;
+    width: 0.8rem;
     height: 1.7rem;
 }
 
@@ -72,8 +72,8 @@ nav .menu {
 nav .menu span {
     height: 3px;
     width: 10%;
-    padding-left: 50px;
-    padding-right: -50px;
+    padding-left: 30px;
+    
     color: black;
     background-color: rgb(66, 56, 99);
     border-radius: 0.3rem;
@@ -81,7 +81,7 @@ nav .menu span {
 }
 
 nav .menu.open span:nth-child(1) {
-    transform: translateY(11px) rotate(45deg); /* Rotate and move first line */
+    transform: translateY(10px) rotate(45deg); /* Rotate and move first line */
 }
 
 nav .menu.open span:nth-child(2) {
@@ -89,7 +89,7 @@ nav .menu.open span:nth-child(2) {
 }
 
 nav .menu.open span:nth-child(3) {
-    transform: translateY(-11px) rotate(-45deg); /* Rotate and move third line */
+    transform: translateY(-10px) rotate(-45deg); /* Rotate and move third line */
 }
 
 @media (max-width: 480px) {
