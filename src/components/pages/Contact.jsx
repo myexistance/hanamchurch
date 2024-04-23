@@ -24,7 +24,9 @@ export const Contact = () => {
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', maxWidth: '100%', padding: '25px' }}>
+    <div style={{ 
+      backgroundColor: '#F8F9F9',
+      display: 'flex', flexDirection: 'column', maxWidth: '100%', padding: '25px' }}>
       <div style={{ flex: 1 }}>
         <br />
         <h3 style={{ textAlign: "center" }}>MAP: 88 The Parade, Island Bay, Wellington 6023</h3>

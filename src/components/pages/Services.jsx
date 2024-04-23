@@ -5,7 +5,7 @@ export const Services = () => {
   return (
     <>
     
-    <div style={{ maxWidth: '100%', padding: '30px' }}>
+    <div style={{ backgroundColor: '#F8F9F9', maxWidth: '100%', padding: '30px' }}>
       <div style={{ textAlign: 'center', marginBottom: '10px' }}>
         <h3>주일 예배시간</h3>
         <div style={{ textAlign: 'left',maxWidth: '800px', margin: '0 auto', padding: '30px' }}>

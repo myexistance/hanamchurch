@@ -3,7 +3,7 @@ import mrryu from '../../asset/mrryu.png';
 
 export const About = () => {
   return (
-    <div className="about">
+    <div style={{backgroundColor: '#F8F9F9'}}className="about">
       <div className="about__content">
         <br />
         <br />

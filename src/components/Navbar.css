@@ -8,7 +8,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #e6afaf;
+    background-color: white;
     color: white;
     position: sticky;
     top: 0;
@@ -32,7 +32,7 @@ nav ul {
 
 nav ul li {
    list-style: none; 
-   color:#fefefe;
+   color:#be2121;
 }
 
 nav ul li a {
@@ -53,12 +53,12 @@ nav ul li a:not(.active):hover {
 nav .menu {
     display: none;
     position: absolute;
-    top: 1.4rem;
-    right: 0.8rem;
+    top: 1.8rem;
+    right: 1.8rem;
     flex-direction: column;
     justify-content: space-around;
-    width: 3.2rem;
-    height: 2.0rem;
+    width: 2.0rem;
+    height: 1.7rem;
 }
 
 /* nav .menu span {
@@ -70,15 +70,18 @@ nav .menu {
 } */
 
 nav .menu span {
-    height: 0.2rem;
-    width: 50%;
-    background-color: #fff;
-    border-radius: 0.4rem;
+    height: 3px;
+    width: 10%;
+    padding-left: 50px;
+    padding-right: -50px;
+    color: black;
+    background-color: rgb(66, 56, 99);
+    border-radius: 0.3rem;
     transition: all 0.3s ease; /* Add transition for smooth animation */
 }
 
 nav .menu.open span:nth-child(1) {
-    transform: translateY(15px) rotate(45deg); /* Rotate and move first line */
+    transform: translateY(11px) rotate(45deg); /* Rotate and move first line */
 }
 
 nav .menu.open span:nth-child(2) {
@@ -86,7 +89,7 @@ nav .menu.open span:nth-child(2) {
 }
 
 nav .menu.open span:nth-child(3) {
-    transform: translateY(-12px) rotate(-45deg); /* Rotate and move third line */
+    transform: translateY(-11px) rotate(-45deg); /* Rotate and move third line */
 }
 
 @media (max-width: 480px) {
