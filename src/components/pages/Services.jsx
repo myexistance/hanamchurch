@@ -1,5 +1,5 @@
 import React from "react";
-import YouTubeEmbed from './YouTubeEmbed'; // Assuming you have a component for embedding YouTube videos
+import YouTubeEmbed from './YoutubeEmbed'; // Assuming you have a component for embedding YouTube videos
 
 export const Services = () => {
   return (
