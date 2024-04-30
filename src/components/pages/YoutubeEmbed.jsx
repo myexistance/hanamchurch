@@ -4,12 +4,16 @@ import React, { useState, useEffect } from 'react';
 const YouTubeEmbed = () => {
   const [latestVideoId, setLatestVideoId] = useState('');
 
+  // const YOUTUBE_LINK = 'https://www.googleapis.com/youtube/v3/search';
+
+  const apiKey = import.meta.env.VITE_SOME_KEY;
+
   useEffect(() => {
     // Function to fetch the latest video ID
     const fetchLatestVideoId = async () => {
       try {
         // google API does not seem to work, needs a fix...
-        const response = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY}&channelId=UC-5KZRaltWluIGIEZCPle7w&part=snippet&order=date&maxResults=1`);
+        const response = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=UC-5KZRaltWluIGIEZCPle7w&part=snippet&order=date&maxResults=1`);
 
         const data = await response.json();
         // Assuming the response contains the latest video ID
