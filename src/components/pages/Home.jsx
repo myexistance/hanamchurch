@@ -71,7 +71,7 @@ export const Home = () => {
           minHeight: "95vh", // Ensures the background covers the entire viewport
         }}>
       <Section></Section>
-      <Section style={{ flex: 0.6, margin: '25px',padding: '35px', background: '#00003333'}}>
+      <Section style={{ flex: 0.6,padding: '35px', background: '#00003333'}}>
         <p style={{ 
             color: 'white', 
             fontSize: '23px' }}>
