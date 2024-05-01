@@ -29,34 +29,3 @@ export const Home = () => {
     </>
   );
 };
-
-
-// import React from "react";
-// import backgroundImage from "./background.jpg"; // Adjust the path to your image
-
-// const ComponentWithBackgroundImage = () => {
-//   return (
-//     <div
-//       className="component"
-//       style={{
-//         backgroundImage: `url(${backgroundImage})`,
-//         backgroundPosition: "center",
-//         backgroundSize: "cover",
-//         backgroundRepeat: "no-repeat",
-//         minHeight: "100vh", // Ensures the background covers the entire viewport
-//         display: "flex",
-//         alignItems: "center",
-//         justifyContent: "center",
-//         flexDirection: "column",
-//         textAlign: "right", // Aligns text to the right
-//         padding: "0 20px" // Adds padding to the paragraph
-//       }}
-//     >
-//       <p className="paragraph">
-//         This is some text in the right-middle.
-//       </p>
-//     </div>
-//   );
-// };
-
-// export default ComponentWithBackgroundImage;

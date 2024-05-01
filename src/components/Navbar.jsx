@@ -18,7 +18,7 @@ export const Navbar = () => {
   return (
     <nav>
       <Link to="/" className="title">
-        <img src={logo} alt="Logo" className="title"/>
+        <img src={logo} alt="Logo" className="logo"/>
       </Link>
       <div className={`menu ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
         <span></span>
@@ -34,6 +34,9 @@ export const Navbar = () => {
         </li>
         <li>
           <NavLink to="/services" onClick={closeMenu}>Services</NavLink>
+        </li>
+        <li>
+          <NavLink to="/column" onClick={closeMenu}>Column</NavLink>
         </li>
         <li>
           <NavLink to="/contact" onClick={closeMenu}>Contact</NavLink>

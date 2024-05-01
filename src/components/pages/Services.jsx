@@ -12,6 +12,7 @@ export const Services = () => {
       <p>1부: 오후 1:30 본당</p>
       <p>2부: 오후 2:30 교제 모임</p>
       <p>주일학교: 오후 12:40 본당</p>
+      <p>새벽기도 (미라클 모닝): 오전 6:00 본당</p>
       </div>
 
       <hr style={{ width: '100%', marginBottom: '20px' }} /> {/* Line */}
@@ -19,7 +20,7 @@ export const Services = () => {
       </div>
       
       <div style={{ textAlign: 'center' }}>
-        <h3>교회 셀 그룹 및 셀모임</h3>
+        <h3>셀 모임</h3>
         <div style={{ textAlign: 'left',maxWidth: '800px', margin: '0 auto', padding: '30px', lineHeight: '1.5'  }}>
         <p>
           시간: 주일 3:20pm <br />

@@ -45,7 +45,7 @@ export const Contact = () => {
       <div style={{ flex: 1, padding: '20px', textAlign: 'center' }}>
         {/* Paragraph goes here */}
         <h3 style={{ textAlign: "center" }}>OFFERING:</h3> <br />
-        <p>ASB Account number:12-3254-0198348-00</p>
+        <p>ASB Account number:<br />12-3254-0198348-00</p>
       </div>
       <br />
       <hr style={{ width: '100%', marginBottom: '20px' }} /> {/* Line */}

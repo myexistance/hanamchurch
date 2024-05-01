@@ -1,6 +1,7 @@
 
 
 .App {
+  font-family: Noto Serif KR;
   background-color: #fefefe;
   height: 100%;
   width: 100%;
@@ -8,7 +9,7 @@
 
 @media only screen and (min-width: 600px) {
   .contact-wrapper {
-    flex-direction: row;
+    flex-direction: column;
   }
   .contact-wrapper > div {
     flex: 1;
