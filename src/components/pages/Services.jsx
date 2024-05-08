@@ -9,11 +9,21 @@ export const Services = () => {
       <div style={{ textAlign: 'center', marginBottom: '10px' }}>
         <h3>주일 예배시간</h3>
         <div style={{ textAlign: 'left',maxWidth: '800px', margin: '0 auto', padding: '30px' }}>
-      <p>1부: 오후 1:30 본당</p>
-      <p>2부: 오후 2:30 교제 모임</p>
-      <p>주일학교: 오후 12:40 본당</p>
-      <p>새벽기도 (미라클 모닝): 오전 6:00 본당</p>
+            <p>1부: 오후 1:30 본당</p>
+            <p>2부: 오후 2:30 교제 모임</p>
+            <p>주일학교: 오후 12:40 본당</p>
+            <p>새벽기도 (미라클 모닝): 오전 6:00 본당</p>
+        </div>
+
+      <hr style={{ width: '100%', marginBottom: '20px' }} /> {/* Line */}
+
       </div>
+
+      <div style={{ textAlign: 'center', marginBottom: '10px' }}>
+        <h3>새벽기도 (미라클 모닝)</h3>
+        <div style={{ textAlign: 'left',maxWidth: '800px', margin: '0 auto', padding: '30px' }}>
+            <p>시간: 토요일 6:00am </p>
+        </div>
 
       <hr style={{ width: '100%', marginBottom: '20px' }} /> {/* Line */}
 
