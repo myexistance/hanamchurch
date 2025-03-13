@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
-import { About, Contact, Home, Services, Column} from "./components/pages";
+import { About, Contact, Home, Services, Board, Column} from "./components/pages";
 import styled, { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
@@ -37,6 +37,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/column" element={<Column />} />
+          <Route path="/board" element={<Board/>} />
           <Route path="/contact" element={<Contact />} />
           </Routes>
       <Footer />

@@ -39,6 +39,9 @@ export const Navbar = () => {
           <NavLink to="/column" onClick={closeMenu}>Column</NavLink>
         </li>
         <li>
+          <NavLink to="/board" onClick={closeMenu}>Board</NavLink>
+        </li>
+        <li>
           <NavLink to="/contact" onClick={closeMenu}>Contact</NavLink>
         </li>
       </ul>
