@@ -1,13 +1,14 @@
 import React from "react";
-import BoardImage from '../../asset/Board.png';
+import newsimage from '../../asset/seminar.png';
+
 
 export const Board = () => {
   return (
     <div
       style={{
-        display: "flex", // Enables flexbox layout
-        justifyContent: "center", // Centers content horizontally
-        alignItems: "center", // Centers content vertically
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
         marginTop: "0",
         padding: "0",
         backgroundColor: "#fff",
@@ -15,20 +16,21 @@ export const Board = () => {
         boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
         width: "100vw",
         height: "100vh",
-        overflow: "auto", // Enables scrolling
+        overflow: "auto",
       }}
     >
       <img
-        src={BoardImage}
+        src={newsimage}
         style={{
-          width: "80%", // Set width to 80%
-          height: "auto", // Keeps aspect ratio
-          display: "block", 
-          objectFit: "contain", // Ensures the image scales nicely inside the container
+          width: "90%",
+          height: "auto",
+          display: "block",
+          objectFit: "contain",
         }}
-        alt="A visually appealing board" // Descriptive alt text
-        loading="lazy" // Lazy loading for better performance
+        alt="A visually appealing board"
+        loading="lazy"
       />
     </div>
   );
 };
+

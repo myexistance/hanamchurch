@@ -39,7 +39,7 @@ export const Navbar = () => {
           <NavLink to="/column" onClick={closeMenu}>Column</NavLink>
         </li>
         <li>
-          <NavLink to="/news" onClick={closeMenu}>News</NavLink>
+          <NavLink to="/board" onClick={closeMenu}>News</NavLink>
         </li>
         <li>
           <NavLink to="/contact" onClick={closeMenu}>Contact</NavLink>
