@@ -1,51 +1,71 @@
-
 import React, { useState, useEffect } from 'react';
 
 const YouTubeEmbed = () => {
   const [latestVideoId, setLatestVideoId] = useState('');
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  // const YOUTUBE_LINK = 'https://www.googleapis.com/youtube/v3/search';
-
-  const apiKey = import.meta.env.VITE_SOME_KEY;
+  const apiKey = import.meta.env.VITE_SOME_KEY;  // Ensure the key is correctly set in .env
 
   useEffect(() => {
-    // Function to fetch the latest video ID
     const fetchLatestVideoId = async () => {
       try {
-        // google API does not seem to work, needs a fix...
+        // Replace with your correct channel ID
         const response = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=UC-5KZRaltWluIGIEZCPle7w&part=snippet&order=date&maxResults=1`);
 
+        if (!response.ok) {
+          throw new Error('Failed to fetch the data from YouTube API');
+        }
+
         const data = await response.json();
-        // Assuming the response contains the latest video ID
-        const latestId = data.items[0].id.videoId;
-        setLatestVideoId(latestId);
+
+        if (data.items && data.items.length > 0) {
+          const latestId = data.items[0].id.videoId;
+          setLatestVideoId(latestId);
+        } else {
+          setError('No videos found.');
+        }
       } catch (error) {
-        console.error('Error fetching latest video ID:', error);
+        setError(error.message);
+      } finally {
+        setLoading(false);
       }
     };
 
-    // Fetch the latest video ID initially
+    // Initial fetch
     fetchLatestVideoId();
 
-    // Set up interval to fetch the latest video ID periodically (e.g., every hour)
-    const intervalId = setInterval(fetchLatestVideoId, 3600000); // 1 hour
+    // Set up periodic fetch (1 hour interval)
+    const intervalId = setInterval(fetchLatestVideoId, 3600000); 
 
-    // Clean up interval on component unmount
-    return () => clearInterval(intervalId);
-  }, []);
+    return () => clearInterval(intervalId);  // Cleanup on unmount
+  }, [apiKey]);
+
+  // Show loading or error state
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
 
   return (
     <div className="video-responsive">
-      <iframe 
-        width="100%" 
-        height="100%" 
-        src={`https://www.youtube.com/embed/${latestVideoId}`} 
-        title="YouTube video player" 
-        frameBorder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        referrerPolicy="strict-origin-when-cross-origin" 
-        allowFullScreen
-      ></iframe>
+      {latestVideoId ? (
+        <iframe
+          width="100%" 
+          height="100%" 
+          src={`https://www.youtube.com/embed/${latestVideoId}`} 
+          title="YouTube video player" 
+          frameBorder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          referrerPolicy="strict-origin-when-cross-origin" 
+          allowFullScreen
+        ></iframe>
+      ) : (
+        <div>No latest video available.</div>
+      )}
     </div>
   );
 };
