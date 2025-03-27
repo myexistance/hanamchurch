@@ -20,6 +20,10 @@ const YouTubeEmbed = () => {
           throw new Error(`YouTube API Error: ${response.status} - ${response.statusText}`);
         }
 
+        if (!response.ok) {
+          throw new Error('Failed to fetch the data from YouTube API');
+        }
+
         const data = await response.json();
         console.log("YouTube API Response:", data); // Debugging: Log the full API response
 

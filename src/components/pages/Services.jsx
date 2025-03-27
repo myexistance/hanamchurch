@@ -35,10 +35,10 @@ export const Services = () => {
         <p>
           시간: 주일 3:20pm <br />
           장소: 교회 라운지(교제실) <br />
-          여성 1셀 <br />
+          {/* 여성 1셀 <br />
           여성 2셀 <br />
           남성 1셀 <br />
-          청년(유스)
+          청년(유스) */}
         </p>
         </div>
         <hr style={{ width: '100%', marginBottom: '20px' }} /> {/* Line */}
