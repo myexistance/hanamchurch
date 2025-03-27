@@ -1,51 +1,75 @@
-
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const YouTubeEmbed = () => {
-  const [latestVideoId, setLatestVideoId] = useState('');
+  const [latestVideoId, setLatestVideoId] = useState("");
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  // const YOUTUBE_LINK = 'https://www.googleapis.com/youtube/v3/search';
-
-  const apiKey = import.meta.env.VITE_SOME_KEY;
+  const apiKey = import.meta.env.VITE_SOME_KEY;  // Ensure this is correctly set
+  console.log("API Key:", apiKey); // Debugging: Check if API key is defined
 
   useEffect(() => {
-    // Function to fetch the latest video ID
     const fetchLatestVideoId = async () => {
       try {
-        // google API does not seem to work, needs a fix...
-        const response = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=UC-5KZRaltWluIGIEZCPle7w&part=snippet&order=date&maxResults=1`);
+        console.log("Fetching latest video...");
+        const response = await fetch(
+          `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=UC-5KZRaltWluIGIEZCPle7w&part=snippet,id&order=date&maxResults=1`
+        );
+
+        if (!response.ok) {
+          throw new Error(`YouTube API Error: ${response.status} - ${response.statusText}`);
+        }
 
         const data = await response.json();
-        // Assuming the response contains the latest video ID
-        const latestId = data.items[0].id.videoId;
-        setLatestVideoId(latestId);
+        console.log("YouTube API Response:", data); // Debugging: Log the full API response
+
+        if (data.items && data.items.length > 0) {
+          const latestItem = data.items[0];
+          const latestId = latestItem.id?.videoId || null;
+
+          if (latestId) {
+            setLatestVideoId(latestId);
+          } else {
+            setError("No valid video ID found.");
+          }
+        } else {
+          setError("No videos found in the response.");
+        }
       } catch (error) {
-        console.error('Error fetching latest video ID:', error);
+        setError(error.message);
+        console.error("Fetch error:", error);
+      } finally {
+        setLoading(false);
       }
     };
 
-    // Fetch the latest video ID initially
     fetchLatestVideoId();
 
-    // Set up interval to fetch the latest video ID periodically (e.g., every hour)
-    const intervalId = setInterval(fetchLatestVideoId, 3600000); // 1 hour
+    // Fetch every hour
+    const intervalId = setInterval(fetchLatestVideoId, 3600000);
 
-    // Clean up interval on component unmount
-    return () => clearInterval(intervalId);
-  }, []);
+    return () => clearInterval(intervalId); // Cleanup on unmount
+  }, [apiKey]);
+
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error}</div>;
 
   return (
     <div className="video-responsive">
-      <iframe 
-        width="100%" 
-        height="100%" 
-        src={`https://www.youtube.com/embed/${latestVideoId}`} 
-        title="YouTube video player" 
-        frameBorder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        referrerPolicy="strict-origin-when-cross-origin" 
-        allowFullScreen
-      ></iframe>
+      {latestVideoId ? (
+        <iframe
+          width="100%"
+          height="100%"
+          src={`https://www.youtube.com/embed/${latestVideoId}`}
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+      ) : (
+        <div>No latest video available.</div>
+      )}
     </div>
   );
 };

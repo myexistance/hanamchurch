@@ -1,9 +1,10 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()], assetsInclude: ['**/*.png'],
-})
-
-
+  define: {
+    'process.env': process.env, // Ensures environment variables are accessible
+  },
+  plugins: [react()], // Correctly placed plugins
+  assetsInclude: ['**/*.png'], // Ensures PNG files are included in build
+});
