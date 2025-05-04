@@ -35,7 +35,7 @@
 // };
 
 import React from "react";
-import newsimage from '../../asset/april.png';
+import newsimage from '../../asset/may.png';
 
 export const Board = () => {
   return (
@@ -57,7 +57,7 @@ export const Board = () => {
     >
       <img
         src={newsimage}
-        alt="April news board"
+        alt="May news board"
         style={{
           maxWidth: "90%",
           height: "auto",
