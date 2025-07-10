@@ -29,9 +29,10 @@ export const Contact = () => {
       display: 'flex', flexDirection: 'column', maxWidth: '100%', padding: '25px' }}>
       <div style={{ flex: 1 }}>
         <br />
-        <h3 style={{ textAlign: "center" }}>MAP: 88 The Parade, Island Bay, Wellington 6023</h3>
+        <h3 style={{ textAlign: "center" }}>MAP: Wellington Korean Church
+        184 Ohiro Road, Brooklyn, Wellington 6021</h3>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4609.779165050718!2d174.77022562713333!3d-41.33224884848255!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38baad534e9011%3A0xfcb0c92cd1b4bb49!2s88%20The%20Parade%2C%20Island%20Bay%2C%20Wellington%206023!5e0!3m2!1sen!2snz!4v1713416854861!5m2!1sen!2snz"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5994.352800988495!2d174.7604113114646!3d-41.3050259711908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38b019d5a12e41%3A0xc01647088737c535!2sWellington%20Korean%20Church!5e0!3m2!1sen!2snz!4v1752143991260!5m2!1sen!2snz"
           width="100%"
           height="450"
           style={{ border: 0 }}

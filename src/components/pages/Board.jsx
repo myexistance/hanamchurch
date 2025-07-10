@@ -35,7 +35,7 @@
 // };
 
 import React from "react";
-import newsimage from '../../asset/may.png';
+import newsimage from '../../asset/july.png';
 
 export const Board = () => {
   return (
