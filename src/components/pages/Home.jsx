@@ -43,16 +43,15 @@ export const Home = () => {
         <p style={{ 
             color: 'white', 
             fontSize: '23px' }}>
-            <span style={{ fontFamily: 'arial, sans-serif', fontSize: '24px', fontWeight: 'bolder' }}>웰링턴 한인교회(하남교회)</span><br />
-            는 대한예수교 장로회 합동 교단(사랑의 교회, 수영로교회 등)에 소속된 교회로<br /> 하남교회에서 뉴질랜드 웰링턴에 교회를 설립하여 복음전도 사역의 일환으로 세워졌습니다.<br /><br /> 
+            <span style={{ fontFamily: 'arial, sans-serif', fontSize: '24px', fontWeight: 'bolder' }}>웰링턴 한인교회(하남교회)</span><br />는 하남교회(하남교회의 지교회, 2023년 설립)와 한인교회(1985년에 설립된 뉴질랜드 최초의 한인교회)와 합병을 통해 복음 사역을 확장하는 교회로 세워져 가고 있습니다. 본 교회는 대한예수교 장로회(합동) 소속 교회((사랑의 교회, 충현교회, 수영로교회 등)이며 웰링턴과 뉴질랜드의 복음화를 목표로 합니다. 하나님의 사랑과 말씀의 은혜, 기도의 열정이 있는 웰링턴한인교회(하남교회)에서 구원의 감격, 은혜와 위로, 감사와 기쁨을 경험하시길 바랍니다.<br /><br /> 
           </p>
           <br />
-          <p style={{ color: 'white', fontSize: '23px' }}>
+          {/* <p style={{ color: 'white', fontSize: '23px' }}>
             2023년 1월 15일(주일) 첫 예배를 드리고 하나님의 은혜로 성장하고 있습니다.
             진정한 예배, 진정한 사랑, 진정한 교회의 본질 회복을 통해 영혼을 구원하고 
             하나님의 나라를 구현해 가고 있습니다. <br />
             신앙의 회복과 은혜의 예배를 사모하는 성도님을 환영하고 축복합니다.
-          </p>
+          </p> */}
       </Section>
     </Container>
   );
