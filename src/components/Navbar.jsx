@@ -27,22 +27,22 @@ export const Navbar = () => {
       </div>
       <ul className={menuOpen ? "open" : ""}>
         <li>
-          <NavLink to="/" onClick={closeMenu}>Home</NavLink>
+          <NavLink to="/" onClick={closeMenu}>교회 소개</NavLink>
         </li>
         <li>
-          <NavLink to="/about" onClick={closeMenu}>About</NavLink>
+          <NavLink to="/about" onClick={closeMenu}>교역자</NavLink>
         </li>
         <li>
-          <NavLink to="/services" onClick={closeMenu}>Services</NavLink>
+          <NavLink to="/services" onClick={closeMenu}>온라인 예배</NavLink>
         </li>
         <li>
-          <NavLink to="/column" onClick={closeMenu}>Column</NavLink>
+          <NavLink to="/column" onClick={closeMenu}>컬럼</NavLink>
         </li>
         <li>
-          <NavLink to="/board" onClick={closeMenu}>News</NavLink>
+          <NavLink to="/board" onClick={closeMenu}>소식지</NavLink>
         </li>
         <li>
-          <NavLink to="/contact" onClick={closeMenu}>Contact</NavLink>
+          <NavLink to="/contact" onClick={closeMenu}>연락처</NavLink>
         </li>
       </ul>
     </nav>
